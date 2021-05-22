@@ -5,7 +5,7 @@ RSpec.describe CalcSat do
     expect(CalcSat::VERSION).not_to be nil
   end
 
-  it "does something useful" do
-    expect(false).to eq(true)
+  it "orbita" do
+    expect(CalcSat::Orbita.new().velocity(7078,0,0)).to eq(0.7556702860624055)
   end
 end
